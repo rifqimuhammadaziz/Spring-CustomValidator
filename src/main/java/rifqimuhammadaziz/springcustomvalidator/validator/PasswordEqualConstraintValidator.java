@@ -6,8 +6,8 @@ import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
 // Validator for custom annotation
-public class PasswordEqualConstrainValidator
-        implements ConstraintValidator<PasswordEqualConstrain, Object> {
+public class PasswordEqualConstraintValidator
+        implements ConstraintValidator<PasswordEqualConstraint, Object> {
 
     /*
     If password & retype password is equals, return is true (valid)

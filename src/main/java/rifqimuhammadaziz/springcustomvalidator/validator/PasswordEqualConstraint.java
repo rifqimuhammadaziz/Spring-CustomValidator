@@ -8,8 +8,8 @@ import java.lang.annotation.*;
 @Target({ElementType.TYPE}) // For Class
 @Retention(RetentionPolicy.RUNTIME) // For Running Application
 @Documented // Java Documentation
-@Constraint(validatedBy = PasswordEqualConstrainValidator.class) // Validator
-public @interface PasswordEqualConstrain {
+@Constraint(validatedBy = PasswordEqualConstraintValidator.class) // Validator
+public @interface PasswordEqualConstraint {
 
     String message();
 
