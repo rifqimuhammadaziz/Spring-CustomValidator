@@ -2,6 +2,7 @@ package rifqimuhammadaziz.springcustomvalidator.dto;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import rifqimuhammadaziz.springcustomvalidator.validator.PasswordEqualConstrain;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotEmpty;
@@ -10,6 +11,7 @@ import javax.validation.constraints.Size;
 
 @Data
 @NoArgsConstructor
+@PasswordEqualConstrain(message = "Retype password invalid!")
 public class MemberRequest { // From client to endpoint
 
     @NotEmpty(message = "Number is required")
